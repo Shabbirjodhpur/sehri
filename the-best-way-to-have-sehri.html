@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="zxx"><head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ogani Template">
+    <meta name="keywords" content="Ogani, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sehri</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&amp;display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+<style>
+@keyframes display-sehri{
+	from{
+		opacity:1;
+	}
+to{
+opacity:0;
+}
+}
+@keyframes fill-sehri{
+	from{
+		fill:transparent;
+	}
+to{
+	fill:white;
+}
+}
+@keyframes line-animation-sehri{
+to{
+	stroke-dashoffset:0;
+}
+}
+#sehri-logo-container{
+animation:display-sehri 2s ease forwards 5s;
+}
+#sehri-logo{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	width:90vw;
+	animation: fill-sehri 0.5s ease forwards 3.5s;
+}
+
+#sehri-logo path:nth-child(1) {
+	stroke-dasharray:312;
+	stroke-dashoffset:312;
+	animation:line-animation-sehri 2s ease forwards;
+}
+#sehri-logo path:nth-child(2) {
+	stroke-dasharray:383;
+	stroke-dashoffset:383;
+	animation:line-animation-sehri 2s ease forwards 0.3s;
+}
+#sehri-logo path:nth-child(3) {
+	stroke-dasharray:432;
+	stroke-dashoffset:432;
+	animation:line-animation-sehri 2s ease forwards 0.6s;
+}
+#sehri-logo path:nth-child(4) {
+	stroke-dasharray:411;
+	stroke-dashoffset:411;
+	animation:line-animation-sehri 2s ease forwards 0.9s;
+}
+#sehri-logo path:nth-child(5) {
+	stroke-dasharray:168;
+	stroke-dashoffset:168;
+	animation:line-animation-sehri 2s ease forwards 1.2s;
+}
+
+    @media only screen and (max-width: 600px) {
+  #sehri-hero-container{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding-left: 32px;
+background-color:lightblue;
+padding:16px;
+  }
+        #sehri-hero-img{
+                padding: 24px;
+    margin: 12px 0px;
+        }
+}
+</style>
+</head>
+
+<body>
+<audio controls="" id="intro-audio" style="
+    display: none;
+">
+  <source src="audio/ramadan.mp3" type="audio/mp3">
+Your browser does not support the audio element.
+</audio>
+    <!-- Page Preloder -->
+    <div id="preloder" style="display: none;">
+        <div class="loader" style="display: none;"></div>
+    </div>
+
+    <!-- Humberger Begin -->
+    <div class="humberger__menu__overlay"></div>
+    <div class="humberger__menu__wrapper">
+        <div class="humberger__menu__logo">
+            <a href="#"><img src="img/logo.png" alt=""></a>
+        </div>
+        <div class="humberger__menu__cart">
+            <ul>
+                <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
+                <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+            </ul>
+            <div class="header__cart__price">item: <span>$150.00</span></div>
+        </div>
+        <div class="humberger__menu__widget">
+            <div class="header__top__right__language">
+                <img src="img/language.png" alt="">
+                <div>English</div>
+                <span class="arrow_carrot-down"></span>
+                <ul>
+                    <li><a href="#">Spanis</a></li>
+                    <li><a href="#">English</a></li>
+                </ul>
+            </div>
+            <div class="header__top__right__auth">
+                <a href="#"><i class="fa fa-user"></i> Login</a>
+            </div>
+        </div>
+        <nav class="humberger__menu__nav mobile-menu">
+            <ul>
+                <li class="active"><a href="./index.html">Home</a></li>
+                <li><a href="./shop-grid.html">Shop</a></li>
+                <li><a href="#">Pages</a>
+                    <ul class="header__menu__dropdown">
+                        <li><a href="./shop-details.html">Shop Details</a></li>
+                        <li><a href="./shoping-cart.html">Shoping Cart</a></li>
+                        <li><a href="./checkout.html">Check Out</a></li>
+                        <li><a href="./blog-details.html">Blog Details</a></li>
+                    </ul>
+                </li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu-wrap"><div class="slicknav_menu"><a href="#" aria-haspopup="true" role="button" tabindex="0" class="slicknav_btn slicknav_collapsed"><span class="slicknav_menutxt">MENU</span><span class="slicknav_icon"><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span></span></a><nav class="slicknav_nav slicknav_hidden" aria-hidden="true" role="menu" style="display: none;">
+            <ul>
+                <li class="active"><a href="./index.html" role="menuitem">Home</a></li>
+                <li><a href="./shop-grid.html" role="menuitem">Shop</a></li>
+                <li class="slicknav_collapsed slicknav_parent"><a href="#" role="menuitem" aria-haspopup="true" tabindex="-1" class="slicknav_item slicknav_row"><a href="#">Pages</a>
+                    <span class="slicknav_arrow">►</span></a><ul class="header__menu__dropdown slicknav_hidden" role="menu" aria-hidden="true" style="display: none;">
+                        <li><a href="./shop-details.html" role="menuitem" tabindex="-1">Shop Details</a></li>
+                        <li><a href="./shoping-cart.html" role="menuitem" tabindex="-1">Shoping Cart</a></li>
+                        <li><a href="./checkout.html" role="menuitem" tabindex="-1">Check Out</a></li>
+                        <li><a href="./blog-details.html" role="menuitem" tabindex="-1">Blog Details</a></li>
+                    </ul>
+                </li>
+                <li><a href="./blog.html" role="menuitem">Blog</a></li>
+                <li><a href="./contact.html" role="menuitem">Contact</a></li>
+            </ul>
+        </nav></div><div class="slicknav_menu"><a href="#" aria-haspopup="true" role="button" tabindex="0" class="slicknav_btn slicknav_collapsed" style="outline: none;"><span class="slicknav_menutxt">MENU</span><span class="slicknav_icon"><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span></span></a><nav class="slicknav_nav slicknav_hidden" aria-hidden="true" role="menu" style="display: none;">
+            <ul>
+                <li class="active"><a href="./index.html" role="menuitem">Home</a></li>
+                <li><a href="./shop-grid.html" role="menuitem">Shop</a></li>
+                <li class="slicknav_collapsed slicknav_parent"><a href="#" role="menuitem" aria-haspopup="true" tabindex="-1" class="slicknav_item slicknav_row" style="outline: none;"></a><a href="#">Pages</a>
+                    <span class="slicknav_arrow">►</span><ul class="header__menu__dropdown slicknav_hidden" role="menu" aria-hidden="true" style="display: none;">
+                        <li><a href="./shop-details.html" role="menuitem" tabindex="-1">Shop Details</a></li>
+                        <li><a href="./shoping-cart.html" role="menuitem" tabindex="-1">Shoping Cart</a></li>
+                        <li><a href="./checkout.html" role="menuitem" tabindex="-1">Check Out</a></li>
+                        <li><a href="./blog-details.html" role="menuitem" tabindex="-1">Blog Details</a></li>
+                    </ul>
+                </li>
+                <li><a href="./blog.html" role="menuitem">Blog</a></li>
+                <li><a href="./contact.html" role="menuitem">Contact</a></li>
+            </ul>
+        </nav></div><div class="slicknav_menu"><a href="#" aria-haspopup="true" role="button" tabindex="0" class="slicknav_btn slicknav_collapsed" style="outline: none;"><span class="slicknav_menutxt">MENU</span><span class="slicknav_icon"><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span></span></a><nav class="slicknav_nav slicknav_hidden" aria-hidden="true" role="menu" style="display: none;">
+            <ul>
+                <li class="active"><a href="./index.html" role="menuitem">Home</a></li>
+                <li><a href="./shop-grid.html" role="menuitem">Shop</a></li>
+                <li class="slicknav_collapsed slicknav_parent"><a href="#" role="menuitem" aria-haspopup="true" tabindex="-1" class="slicknav_item slicknav_row" style="outline: none;"></a><a href="#">Pages</a>
+                    <span class="slicknav_arrow">►</span><ul class="header__menu__dropdown slicknav_hidden" role="menu" aria-hidden="true" style="display: none;">
+                        <li><a href="./shop-details.html" role="menuitem" tabindex="-1">Shop Details</a></li>
+                        <li><a href="./shoping-cart.html" role="menuitem" tabindex="-1">Shoping Cart</a></li>
+                        <li><a href="./checkout.html" role="menuitem" tabindex="-1">Check Out</a></li>
+                        <li><a href="./blog-details.html" role="menuitem" tabindex="-1">Blog Details</a></li>
+                    </ul>
+                </li>
+                <li><a href="./blog.html" role="menuitem">Blog</a></li>
+                <li><a href="./contact.html" role="menuitem">Contact</a></li>
+            </ul>
+        </nav></div></div>
+        <div class="header__top__right__social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-pinterest-p"></i></a>
+        </div>
+        <div class="humberger__menu__contact">
+            <ul>
+                <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
+                <li>Free Shipping for all Order of $99</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Humberger End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__left">
+                            <ul>
+                                <li><i class="fa fa-envelope"></i>shabbirjodhpurwala@gmail.com</li>
+                                <li>Free Shipping for all Bulk Orders</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__right">
+                            <div class="header__top__right__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                            </div>
+                            <!-- <div class="header__top__right__language">
+                                <img src="img/language.png" alt="">
+                                <div>English</div>
+                                <span class="arrow_carrot-down"></span>
+                                <ul>
+                                    <li><a href="#">Spanis</a></li>
+                                    <li><a href="#">English</a></li>
+                                </ul>
+                            </div> -->
+                            <!-- <div class="header__top__right__auth">
+                                <a href="#"><i class="fa fa-user"></i> Login</a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <nav class="header__menu">
+                        <ul>
+                            <li class="active"><a href="./index.html">Home</a></li>
+                            <li><a href="./index.html#sehri-products">Shop</a></li>
+                            <!-- <li><a href="#">Pages</a>
+                                <ul class="header__menu__dropdown">
+                                    <li><a href="./shop-details.html">Shop Details</a></li>
+                                    <li><a href="./shoping-cart.html">Shoping Cart</a></li>
+                                    <li><a href="./checkout.html">Check Out</a></li>
+                                    <li><a href="./blog-details.html">Blog Details</a></li>
+                                </ul>
+                            </li> -->
+                            <li><a href="./index.html#sehri-blogs">Blog</a></li>
+                            <li><a href="https://wa.me/919392899127">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- <div class="col-lg-3">
+                    <div class="header__cart">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
+                            <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                        </ul>
+                        <div class="header__cart__price">item: <span>$150.00</span></div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="humberger__open" style="
+    border: 0;
+">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Hero Section Begin -->
+    <!-- <section class="hero hero-normal">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="hero__categories">
+                        <div class="hero__categories__all">
+                            <i class="fa fa-bars"></i>
+                            <span>All departments</span>
+                        </div>
+                        <ul>
+                            <li><a href="#">Fresh Meat</a></li>
+                            <li><a href="#">Vegetables</a></li>
+                            <li><a href="#">Fruit &amp; Nut Gifts</a></li>
+                            <li><a href="#">Fresh Berries</a></li>
+                            <li><a href="#">Ocean Foods</a></li>
+                            <li><a href="#">Butter &amp; Eggs</a></li>
+                            <li><a href="#">Fastfood</a></li>
+                            <li><a href="#">Fresh Onion</a></li>
+                            <li><a href="#">Papayaya &amp; Crisps</a></li>
+                            <li><a href="#">Oatmeal</a></li>
+                            <li><a href="#">Fresh Bananas</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="hero__search">
+                        <div class="hero__search__form">
+                            <form action="#">
+                                <div class="hero__search__categories">
+                                    All Categories
+                                    <span class="arrow_carrot-down"></span>
+                                </div>
+                                <input type="text" placeholder="What do yo u need?">
+                                <button type="submit" class="site-btn">SEARCH</button>
+                            </form>
+                        </div>
+                        <div class="hero__search__phone">
+                            <div class="hero__search__phone__icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="hero__search__phone__text">
+                                <h5>+65 11.188.888</h5>
+                                <span>support 24/7 time</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Hero Section End -->
+
+    <!-- Blog Details Hero Begin -->
+    <section class="blog-details-hero set-bg" data-setbg="img/blog/details/details-hero.jpg" style="background-image: url(&quot;https://gumlet.assettype.com/freepressjournal/2020-05/dd074139-43a3-4aab-a2a4-50d328d02509/d9037609_7845_428c_929c_c6eae6b7d320.jpg?w=700&amp;h=400&amp;format=webp&quot;);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="blog__details__hero__text">
+                        <h2>The best way to have sehri</h2>
+                        <ul>
+                            <li>By Team Sheri</li>
+                            <li>March 19, 2023</li>
+                            <!-- <li>8 Comments</li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Details Hero End -->
+
+    <!-- Blog Details Section Begin -->
+    <section class="blog-details spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-5 order-md-1 order-2">
+                    <div class="blog__sidebar">
+                        <!-- <div class="blog__sidebar__search">
+                            <form action="#">
+                                <input type="text" placeholder="Search...">
+                                <button type="submit"><span class="icon_search"></span></button>
+                            </form>
+                        </div> -->
+                        <!-- <div class="blog__sidebar__item">
+                            <h4>Categories</h4>
+                            <ul>
+                                <li><a href="#">All</a></li>
+                                <li><a href="#">Beauty (20)</a></li>
+                                <li><a href="#">Food (5)</a></li>
+                                <li><a href="#">Life Style (9)</a></li>
+                                <li><a href="#">Travel (10)</a></li>
+                            </ul>
+                        </div> -->
+                        <!-- <div class="blog__sidebar__item">
+                            <h4>Recent News</h4>
+                            <div class="blog__sidebar__recent">
+                                <a href="#" class="blog__sidebar__recent__item">
+                                    <div class="blog__sidebar__recent__item__pic">
+                                        <img src="img/blog/sidebar/sr-1.jpg" alt="">
+                                    </div>
+                                    <div class="blog__sidebar__recent__item__text">
+                                        <h6>09 Kinds Of Vegetables<br> Protect The Liver</h6>
+                                        <span>MAR 05, 2019</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="blog__sidebar__recent__item">
+                                    <div class="blog__sidebar__recent__item__pic">
+                                        <img src="img/blog/sidebar/sr-2.jpg" alt="">
+                                    </div>
+                                    <div class="blog__sidebar__recent__item__text">
+                                        <h6>Tips You To Balance<br> Nutrition Meal Day</h6>
+                                        <span>MAR 05, 2019</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="blog__sidebar__recent__item">
+                                    <div class="blog__sidebar__recent__item__pic">
+                                        <img src="img/blog/sidebar/sr-3.jpg" alt="">
+                                    </div>
+                                    <div class="blog__sidebar__recent__item__text">
+                                        <h6>4 Principles Help You Lose <br>Weight With Vegetables</h6>
+                                        <span>MAR 05, 2019</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div> -->
+                        <!-- <div class="blog__sidebar__item">
+                            <h4>Search By</h4>
+                            <div class="blog__sidebar__item__tags">
+                                <a href="#">Apple</a>
+                                <a href="#">Beauty</a>
+                                <a href="#">Vegetables</a>
+                                <a href="#">Fruit</a>
+                                <a href="#">Healthy Food</a>
+                                <a href="#">Lifestyle</a>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 order-md-1 order-1">
+                    <div class="blog__details__text" style="
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+">
+                        <!-- <img src="https://gumlet.assettype.com/freepressjournal/2020-05/dd074139-43a3-4aab-a2a4-50d328d02509/d9037609_7845_428c_929c_c6eae6b7d320.jpg?w=700&amp;h=400&amp;format=webp" alt="" style="
+    width: 90vw;
+    max-width: 500px;
+"> -->
+                        <p style="
+    font-style: italic;
+">
+    During Ramadan, people have their first meal before sunrise known as 'sehri' (also called suhoor) and the other meal is 'iftar', which is served after sunset.
+</p>
+<p style="
+">
+    Here is a list of a few tips and tricks to help you keep hydrated for the whole day:
+</p>
+
+    <h3 style="
+">1. Drink enough water</h3>
+<p>
+A simple and important way to stay hydrated is drinking enough water during suhoor. According to various studies, minimum of 60 ounces or nearly 2 litres of water can help you keep hydrated for an entire day during the fast that falls in the season of summer. The tip is to sip gradually and not chug it all at once.
+</p>
+<h3>
+  2. Light and healthy is the rule  
+</h3>
+
+<p>
+Sehri meal should be light and healthy. If you think that eating a lot would suffice you all day, then you are wrong. The key is to have a rich in fibre diet that will leave you feeling energized the whole day.
+</p><h3>
+3. Dates are a must
+</h3><p>
+Dates are given priority during Ramadan and it has been a tradition to include them in the meals as Prophet Mohammad did so in history. Scientifically, dates are considered important during fasting because they are rich in copper, selenium, and magnesium.
+
+It also contains Vitamin K, which coagulates your bones. It helps human body cells to store fluids as they are a natural source of glucose. Therefore, it can increase the uptake of sodium and water in the intestines.
+</p><h3>
+4. Early to bed and early to rise
+</h3><p>
+Overall wellness of the body is built on the foundations of sufficient sleep. And waking up early morning is known to have many benefits. Hence, one of the key factors of staying fit during fasting is getting proper sleep.
+
+It is especially important for one to wake up on time in order to have suhoor, which is a pre-dawn meal during Ramadan and is the most vital part of the day. If one will be fasting till the sunset, they need the energy to carry them through the day.
+
+Hence, no matter how tired you are, it is important that you set up your alarm at least 40-50 minutes before Fajr to wake up on time, prepare the meal, freshen up and enjoy it in peace. This is recommended because the human body needs enough time to digest the first meal that is taken during dawn time. On the other hand, it is also unhealthy to gulp food if you eat everything in the last 5-10 minutes of sehri.
+</p><h3>
+5. Don't skip the yoghurt
+</h3><p>
+Even a spoonful of yoghurt could work wonders! Eating yoghurt at the end of your sehri meal is scientifically correct and beneficial as it helps to soothe your stomach and prevent acidity, eventually preventing you from getting dehydrated.
+</p><h3>
+6. An apple and banana a day, will keep the dehydration away
+</h3><p>
+Banana and apple are recommended as they will add roughage to your diet. Both the fruits are low in calories and high in necessary nutrition like fibre, Vitamin C, and various antioxidants that can help you from feeling drained.
+</p><h3>
+7. Avoid salty, spicy and sugary food
+</h3><p>
+Keeping spice, salt, and sugar low in your meal could help you from feeling thirsty. Sodium in these types of foods helps balance fluid inside your body. When you consume high salty foods, water is drawn away from your cells, which later triggers thirst.
+</p><h3>
+8. Add water-rich, juicy fruits
+</h3><p>
+Adding water-rich foods like cucumber, tomato salad, and juicy fruits like watermelon, oranges, kiwi, and more in your sehri meal could keep you hydrated throughout the day.
+</p><p>
+These were a few tips and tricks to help smoothen the fast practice for the holy month. Following these will not only prevent one from getting dehydrated but also from catching an infection.
+</p><p>
+Keep a check on your iftar meal too as it is very important to replace fluids lost during the day and to start the next day of fasting well-hydrated and with a light stomach.
+</p><p>
+Feast and indulge in your favourite delicacies this Ramadan but don't forget to add these tips to your daily routine.
+</p><p>
+Wishing you a happy Ramadan that will inspire you with courage and strength and will help you win every challenge in life!
+</p>
+                        
+                        
+                    </div>
+                    <div class="blog__details__content">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="blog__details__author">
+                                    <div class="blog__details__author__pic">
+                                        <!-- <img src="img/blog/details/details-author.jpg" alt=""> -->
+                                    </div>
+                                    <div class="blog__details__author__text">
+                                        <h6>Team Sheri</h6>
+                                        <span>Admin</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="blog__details__widget">
+                                    <ul>
+                                        <li><span>Categories:</span> Food</li>
+                                        <li><span>Tags:</span> All, Trending, Cooking, Healthy Food, Life Style</li>
+                                    </ul>
+                                    <div class="blog__details__social">
+                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                                        <a href="#"><i class="fa fa-envelope"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Details Section End -->
+
+    <!-- Related Blog Section Begin -->
+    <section class="related-blog spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title related-blog-title">
+                        <h2>Post You May Like</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="
+    display: flex;
+    justify-content: center;
+">
+                <!-- <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="blog__item">
+                        <div class="blog__item__pic">
+                            <img src="img/blog/blog-1.jpg" alt="">
+                        </div>
+                        <div class="blog__item__text">
+                            <ul>
+                                <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
+                                <li><i class="fa fa-comment-o"></i> 5</li>
+                            </ul>
+                            <h5><a href="#">Cooking tips make cooking simple</a></h5>
+                            <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="blog__item">
+                        <div class="blog__item__pic">
+                            <img src="img/blog/blog-2.jpg" alt="">
+                        </div>
+                        <div class="blog__item__text">
+                            <ul>
+                                <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
+                                <li><i class="fa fa-comment-o"></i> 5</li>
+                            </ul>
+                            <h5><a href="#">6 ways to prepare breakfast for 30</a></h5>
+                            <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="blog__item">
+                        <div class="blog__item__pic">
+                            <img src="img/blog/blog-3.jpg" alt="">
+                        </div>
+                        <div class="blog__item__text">
+                            <ul>
+                                <li><i class="fa fa-calendar-o"></i> March 19,2023</li>
+                                <!-- <li><i class="fa fa-comment-o"></i> 5</li> -->
+                            </ul>
+                            <h5><a href="./the-best-way-to-have-sehri.html">The best way to have sehri</a></h5>
+                            <p>Preparing for Sehri can be challenging here is things to keep in mind...</p>
+<a style="
+    position: absolute;
+    border: 0;
+    border-radius: 8px;
+    padding: 8px 12px;
+    background-color: green;
+    color: white;
+    right: 36px;
+" href="./the-best-way-to-have-sehri.html">Read full Blog</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Related Blog Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__about__logo">
+                            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                        </div>
+                        <ul>
+                            <li>Address: EdVenture Park masab tank</li>
+                            <li>Phone: +91 93928 99127</li>
+                            <li>Email: shabbirjodhpurwala@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+                    <!-- <div class="footer__widget">
+                        <h6>Useful Links</h6>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">About Our Shop</a></li>
+                            <li><a href="#">Secure Shopping</a></li>
+                            <li><a href="#">Delivery infomation</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Our Sitemap</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Who We Are</a></li>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Innovation</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                        </ul>
+                    </div> -->
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer__widget">
+                        <h6>Join Our Newsletter Now</h6>
+                        <p>Get E-mail updates about our latest shop and special offers.</p>
+                        <form action="#">
+                            <input type="text" placeholder="Enter your mail">
+                            <button type="submit" class="site-btn">Subscribe</button>
+                        </form>
+                        <div class="footer__widget__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer__copyright">
+                        <div class="footer__copyright__text"><p>
+  Copyright ©2023 All rights reserved | Made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://sehri.in" target="_blank">Sehri.in</a>
+ </p></div>
+                        <div class="footer__copyright__payment"><img src="img/payment-item.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="sehri-logo-container" style="background-color: black;position: fixed;width: 100vw;height: 100vh;top: 0px;/* display: none; */">
+
+<svg id="sehri-logo" width="273" height="83" viewBox="0 0 273 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+<path d="M25.568 80.512C22.616 80.512 19.772 80.152 17.036 79.432C14.3 78.784 11.852 77.992 9.692 77.056C7.604 76.12 5.948 75.328 4.724 74.68C3.5 73.96 2.888 73.6 2.888 73.6C2.888 73.6 3.032 73.24 3.32 72.52C3.68 71.728 4.076 70.864 4.508 69.928C4.94 68.92 5.3 68.056 5.588 67.336C5.948 66.616 6.128 66.256 6.128 66.256C6.128 66.256 6.704 66.58 7.856 67.228C9.08 67.804 10.7 68.488 12.716 69.28C14.732 70 17.036 70.684 19.628 71.332C22.22 71.908 24.92 72.196 27.728 72.196C29.528 72.196 30.932 72.052 31.94 71.764C33.02 71.404 33.776 71.08 34.208 70.792C35.648 69.784 36.764 68.416 37.556 66.688C38.348 64.888 38.744 62.584 38.744 59.776C38.744 57.04 38.168 54.772 37.016 52.972C35.864 51.172 34.316 49.66 32.372 48.436C30.5 47.212 28.448 46.132 26.216 45.196C23.336 43.972 20.636 42.748 18.116 41.524C15.596 40.3 13.364 38.896 11.42 37.312C9.476 35.728 7.964 33.748 6.884 31.372C5.804 28.924 5.264 25.9 5.264 22.3C5.264 18.556 6.092 15.208 7.748 12.256C9.404 9.23198 11.888 6.85598 15.2 5.12798C18.512 3.32798 22.616 2.42798 27.512 2.42798C29.888 2.42798 32.12 2.57198 34.208 2.85998C36.296 3.07598 38.168 3.32798 39.824 3.61598C41.48 3.90398 42.776 4.19198 43.712 4.47998C44.648 4.69598 45.116 4.80398 45.116 4.80398L43.604 12.58C43.604 12.58 43.1 12.508 42.092 12.364C41.084 12.148 39.716 11.896 37.988 11.608C36.26 11.32 34.316 11.104 32.156 10.96C29.996 10.744 27.8 10.636 25.568 10.636C23.768 10.636 22.328 10.744 21.248 10.96C20.24 11.176 19.34 11.536 18.548 12.04C17.612 12.544 16.712 13.588 15.848 15.172C15.056 16.684 14.66 18.772 14.66 21.436C14.66 24.388 15.416 26.8 16.928 28.672C18.44 30.544 20.42 32.092 22.868 33.316C25.316 34.468 27.908 35.62 30.644 36.772C32.804 37.636 34.928 38.644 37.016 39.796C39.104 40.876 40.976 42.208 42.632 43.792C44.288 45.376 45.62 47.392 46.628 49.84C47.636 52.216 48.14 55.132 48.14 58.588C48.14 62.98 47.168 66.832 45.224 70.144C43.352 73.384 40.724 75.94 37.34 77.812C33.956 79.612 30.032 80.512 25.568 80.512Z" stroke="white" stroke-width="4" mask="url(#path-1-outside-1_15_21)"></path>
+<path d="M65.5002 79V3.93998H102.328V11.932L70.4682 11.608L74.6802 7.50398L73.9242 39.688L69.9282 36.988H99.7362V44.656H69.9282L73.9242 41.524L74.6802 75.328L70.4682 71.224L102.328 71.008V79H65.5002Z" stroke="white" stroke-width="4" mask="url(#path-1-outside-1_15_21)"></path>
+<path d="M120.977 79V3.93998H130.049L129.725 39.796L125.621 36.772H165.365L161.261 39.796L161.045 3.93998H170.117V79H161.045L161.261 41.74L165.365 44.764H125.621L129.725 41.74L130.049 79H120.977Z" stroke="white" stroke-width="4" mask="url(#path-1-outside-1_15_21)"></path>
+<path d="M192.801 79L193.341 43.468L193.017 3.93998C193.809 3.79598 195.105 3.65198 196.905 3.50798C198.705 3.36398 200.757 3.21998 203.061 3.07598C205.365 2.93198 207.705 2.82398 210.081 2.75198C212.529 2.60798 214.797 2.53598 216.885 2.53598C221.781 2.53598 226.029 3.29198 229.629 4.80398C233.229 6.31598 236.001 8.79998 237.945 12.256C239.889 15.64 240.861 20.176 240.861 25.864C240.861 32.128 239.493 37.096 236.757 40.768C234.021 44.44 230.061 46.888 224.877 48.112V48.436L241.833 79H231.141L216.021 49.192L201.981 48.652V79H192.801ZM217.965 41.632C223.293 41.632 226.821 40.372 228.549 37.852C230.349 35.26 231.249 31.228 231.249 25.756C231.249 21.292 230.853 17.908 230.061 15.604C229.341 13.228 228.333 11.68 227.037 10.96C226.245 10.456 225.021 10.096 223.365 9.87998C221.781 9.59198 220.053 9.44798 218.181 9.44798C215.229 9.44798 212.205 9.59198 209.109 9.87998C206.085 10.168 203.745 10.42 202.089 10.636L201.873 40.552C204.393 40.84 207.057 41.092 209.865 41.308C212.745 41.524 215.445 41.632 217.965 41.632Z" stroke="white" stroke-width="4" mask="url(#path-1-outside-1_15_21)"></path>
+<path d="M261.356 79.108L261.68 44.656L261.356 3.93998H270.536L270.104 37.096L270.536 79L261.356 79.108Z" stroke="white" stroke-width="4" mask="url(#path-1-outside-1_15_21)"></path>
+</svg>
+
+
+
+
+</div>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+<script>
+    var played=false;
+document.getElementsByTagName("body")[0].addEventListener("click",()=>{
+    if(!played){
+        played=true;   
+	document.getElementById('intro-audio').play();
+    }
+})
+setTimeout(()=>{ window.scroll(0,0);}, 5000)
+setTimeout(()=>{ document.getElementById("sehri-logo-container").style.display="none";}, 7000)
+</script>
+
+
+
+
+</body></html>
